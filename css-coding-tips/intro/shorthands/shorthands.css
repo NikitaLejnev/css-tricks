@@ -1,0 +1,19 @@
+/* shorthand, always gives specified color */
+background: rebbeccapurple;
+
+/* longhand, declaration can be overwritten by background-image */
+background-color: rebbeccapurple;
+
+/* very WET */
+background: url(tr.png) no-repeat top right / 2em 2em,
+  url(tr.png) no-repeat top right / 2em 2em,
+  url(tr.png) no-repeat top right / 2em 2em;
+
+/* CSS list expansion rules say:
+if only one value is provided,
+it is expanded to every item in the list */
+
+background: url(tr.png) top right, url(br.png) bottom right,
+  url(bl.png) bottom left;
+background-size: 2em 2em;
+background-repeat: no-repeat;
