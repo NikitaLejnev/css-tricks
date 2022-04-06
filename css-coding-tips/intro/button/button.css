@@ -1,0 +1,70 @@
+.button {
+  padding: 6px 16px;
+  border: 1px solid #446d88;
+  background: #58a linear-gradient(#77a0bb, #58a);
+  border-radius: 4px;
+  box-shadow: 0 1px 5px gray;
+  color: white;
+  text-shadow: 0 -1px 1px #335166;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* When values depend on each other,
+show it by using relative metrics. */
+.button {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* percentages and ems > px */
+.button {
+  font-size: 125%; /* for 16px font size */
+  line-height: 1.5;
+}
+
+/* Make effects scalable by using ems for lengths */
+.button {
+  padding: 0.3em 0.8em;
+  border: 1px solid #446d88;
+  background: #58a linear-gradient(#77a0bb, #58a);
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em gray;
+  color: white;
+  text-shadow: 0 -0.05em 0.05em #335166;
+  font-size: 125%;
+  line-height: 1.5;
+}
+
+/* Use semi-transparent white and black for lighter/darker variants
+so you don't have to calculate colors */
+.button {
+  background: #58a
+    linear-gradient(hsla(0, 0%, 100%, 0.2), transparent);
+  /* HSLA is faster to type */
+  box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.5);
+  text-shadow: 0 -0.05em 0.05em rgba(0, 0, 0, 0.5);
+}
+
+/* Final version of .button */
+.button {
+  padding: 0.3em 0.8em;
+  border: 1px solid #446d88;
+  background: #58a
+    linear-gradient(hsla(0, 0%, 100%, 0.2), transparent);
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0 -0.05em 0.05em rgba(0, 0, 0, 0.5);
+  font-size: 125%;
+  line-height: 1.5;
+}
+
+/* No sweat! */
+.button--cancel {
+  background-color: #c00;
+}
+
+.button--ok {
+  background-color: #6b0;
+}
