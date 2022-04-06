@@ -1,0 +1,7 @@
+div {
+  /* bottom right here is a fallback for unsupported browsers */
+  background: url(code-pirate.svg) no-repeat bottom right
+    #58a;
+  /* specify offset from any corner: first - keyword, then - offset */
+  background-position: right 20px bottom 10px;
+}
