@@ -1,0 +1,6 @@
+/* One declaration, three edits */
+border-width: 10px 10px 10px 0;
+
+/* Two declarations, two edits, easier to read */
+border-width: 10px;
+border-left-width: 0;
