@@ -1,0 +1,8 @@
+div {
+  background: url("code-pirate.svg") no-repeat;
+  /* the offset is 10 px from the bottom and 20 px from the right side,
+  if we calculate it from the top-left corner, it will be:
+    offset of 100% - 20 px horizontally,
+    offset of 100% - 10 px vertically, */
+  background-position: calc(100% - 20px) calc(100% - 10px);
+}
