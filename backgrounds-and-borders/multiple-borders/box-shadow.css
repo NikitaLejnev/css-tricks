@@ -1,0 +1,12 @@
+.box__border {
+  background: yellowgreen;
+  /* shadow looks like a border because of:
+    positive spread radius (10 px)
+    zero offsets
+    zero blur radius */
+  box-shadow: 0 0 0 10px #655,
+    /* we can use as many shadows as we like, just comma separate them */
+      0 0 0 15px deeppink,
+    /* add a "real" shadow for good measure */ 0 2px 5px
+      15px rgba(0, 0, 0, 0.6);
+}
