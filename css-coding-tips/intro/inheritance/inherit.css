@@ -1,0 +1,29 @@
+/* no need to re-declare, just inherit */
+input,
+select,
+button {
+  font: inherit;
+}
+
+/* no need to specify the color*/
+a {
+  color: inherit;
+}
+
+/* pointer inherits the background and border */
+.callout {
+  position: relative;
+}
+
+.callout::before {
+  content: "";
+  position: absolute;
+  top: -0.4em;
+  left: 1em;
+  padding: 0.35em;
+  background: inherit;
+  border: inherit;
+  border-right: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+}
