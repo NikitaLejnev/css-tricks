@@ -1,0 +1,7 @@
+/* there can only be outline, so only two "borders"
+   at least, outline can be stylid, e.g. dashed */
+.box__border {
+  background: yellowgreen;
+  border: 10px solid #655;
+  outline: 15px solid deeppink;
+}
