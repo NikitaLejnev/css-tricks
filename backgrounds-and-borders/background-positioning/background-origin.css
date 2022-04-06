@@ -1,0 +1,10 @@
+div {
+  padding: 10px;
+
+  background: url("code-pirate.svg") no-repeat #58a bottom
+    right;
+  /* default background origin is padding-box so offsets are 
+  calculated from outer corner of padding box.
+  by specifying content-box, the offsets will take the margins into account */
+  background-origin: content-box;
+}
