@@ -1,0 +1,12 @@
+/* won't work */
+.border--translucent {
+  border: 10px solid hsla(0, 0%, 100%, 0.5);
+  background: white;
+}
+
+.border--translucent {
+  border: 10px solid hsla(0, 0%, 100%, 0.5);
+  background: white;
+  /* prevents extending background underneath border area */
+  background-clip: padding-box;
+}
