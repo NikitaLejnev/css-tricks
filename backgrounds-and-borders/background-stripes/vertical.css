@@ -1,0 +1,8 @@
+/* the first argument specifies the gradient direction;
+   it is optional since the default value is "to bottom" */
+background: linear-gradient(
+  to right /* or 90deg */,
+  #fb3 50%,
+  #58a 0
+);
+background-size: 30px 100%;
