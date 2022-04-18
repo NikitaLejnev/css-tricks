@@ -1,0 +1,20 @@
+/* won't work,
+  this rotates the gradient INSIDE the tile, not the tile itself;
+  the solution: more color stops */
+background: linear-gradient(45deg, #fb3 50%, #58a 0);
+
+background: linear-gradient(
+  45deg,
+  #fb3 25%,
+  #58a 0,
+  #58a 50%,
+  #fb3 0,
+  #fb3 75%,
+  #58a 0
+);
+/* the diagonal stripes will be thinner than horizontal and vertical ones;
+   it is because of Pythagorean theorem:
+    background size specifies the hypothenuse,
+    the stripe width is actually the length of the leg;
+   to get stripes 15px wide, specify a background size of
+    (2 * 15 square roots of 2) = 42.426068871px */
