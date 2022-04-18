@@ -1,0 +1,17 @@
+/* if both color stops are the same,
+   then the color transition will be sharp */
+background: linear-gradient(#fb3 50%, #58a 50%);
+background-size: 100% 30px;
+
+/* if the color stop has a position less than the previous ones
+   then it is set to the largest previously specified one;
+   since 0 is less than 30%, the second color stop is 30% */
+background: linear-gradient(#fb3 50%, #58a 0);
+
+/* same idea with several stripes */
+background: linear-gradient(
+  #fb3 33.3%,
+  #58a 0,
+  #58a 66.6%,
+  yellowgreen 0
+);
